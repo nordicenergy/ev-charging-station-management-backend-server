@@ -1,0 +1,37 @@
+{
+  "subject": "Primärer E-Mail-Server - Authentifizierung fehlgeschlagen",
+  "tenant": "",
+  "baseURL": "<%- evseDashboardURL %>",
+  "body": {
+    "header": {
+      "title": "E-Mail Server Authentifizierung fehlgeschlagen",
+      "image": {
+        "left": {
+          "height": 60,
+          "url": "<%- evseDashboardURL %>/assets/img/logo-email.gif"
+        },
+        "right": {
+          "height": 50,
+          "url": "<%- evseDashboardURL %>/assets/img/info.png"
+        }
+      }
+    },
+    "beforeActionLines": [
+      "Sehr geehrter Administrator,",
+      "",
+      "Die Authentifizierung beim primären E-Mail-Server ist fehlgeschlagen",
+      "",
+      "Bitte überprüfen Sie Ihre Konfiguration.",
+      ""
+    ],
+    "actions": [{
+      "title": "e-Mobility",
+      "url": "<%- evseDashboardURL %>"
+    }],
+    "afterActionLines": [
+      "Mit freundlichen Grüßen",
+      "EV Admins."
+    ],
+    "footer": {}
+  }
+}
